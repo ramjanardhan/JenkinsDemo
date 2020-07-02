@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JenkinsDemo 
 {
-    @RequestMapping(value="/" , method = RequestMethod.GET)
+    @RequestMapping("/")
 	public String restcall()
 	{
 		return "Jenkins overview";
 	}
     
-    @RequestMapping(value="/Rest", method = RequestMethod.POST)
+    @RequestMapping("/Rest")
 	public String restcall1()
 	{
 		return "Sample Rest Call";
